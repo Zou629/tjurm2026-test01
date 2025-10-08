@@ -7,9 +7,13 @@ int my_strlen(char *str) {
      */
 
     // IMPLEMENT YOUR CODE HERE
-    return 0;
+    int count=0;
+    while(*str!='\0'){
+        count++;
+        str++;
+    }
+    return count;
 }
-
 
 // 练习2，实现库函数strcat
 void my_strcat(char *str_1, char *str_2) {
@@ -19,6 +23,15 @@ void my_strcat(char *str_1, char *str_2) {
      */
 
     // IMPLEMENT YOUR CODE HERE
+    while (*str_1!='\0'){
+        str_1++;
+    }
+    while(*str_2!='\0'){
+        *str_1=*str_2;
+        str_1++;
+        str_2++;
+    }
+    *str_1='\0';
 }
 
 
@@ -31,6 +44,10 @@ char* my_strstr(char *s, char *p) {
      */
 
     // IMPLEMENT YOUR CODE HERE
+    if(*p=='\0'){
+        return s;
+    }
+
     return 0;
 }
 
@@ -97,6 +114,12 @@ void rgb2gray(float *in, float *out, int h, int w) {
 
     // IMPLEMENT YOUR CODE HERE
     // ...
+    for(int i=0;i<h;i++){
+        for(int j=0;j<w;j++){
+            
+            float B=
+        }
+    }
 }
 
 // 练习5，实现图像处理算法 resize：缩小或放大图像

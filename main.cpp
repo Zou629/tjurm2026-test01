@@ -7,7 +7,7 @@
 
 
 void test_rgb2gray() {
-    std::cout << "开始测试函数 << rgb2gray >> ..." << std::endl;
+    std::cout << "开始测试函数 << my_strlen >> ..." << std::endl;
     char *path = "../images/rgb2gray/input.jpg";
     float *img;
     int h, w, c;
@@ -56,13 +56,13 @@ void test_strcat() {
 
     int n = 2000;
     // 来源：电影《绿皮书》
-    char str1[n] =
+    char str1[2000] =
     "Dear Dolores\n"
     "When I think of you, I'm reminded of the beautiful plains of Iowa. The distance \n"
     "between us is breaking my spirit. My time and experiences without you are meaningless\n"
     "to me. ";
 
-    char str2[n] =
+    char str2[2000] =
     "Falling in love with you was the easiest thing I have ever done. Nothing \n"
     "matters to me but you. And everyday I am alive, I'm aware of this. I loved you the day \n"
     "I met you, I love you today... And I will love you to rest of my life.";
@@ -156,17 +156,8 @@ void test_resize() {
 }
 
 int main() {
-    std::cout << "开始测试函数 << my_strlen >> ..." << std::endl;
-    test_strlen();
-    std::cout << "开始测试函数 << my_strcat >> ..." << std::endl;
+   std::cout << "开始测试函数 << my_strcat >> ..." << std::endl;
     test_strcat();
-    std::cout << "开始测试函数 << my_strstr >> ..." << std::endl;
-    test_strstr();
-    std::cout << "开始测试函数 << rgb2gray >> ..." << std::endl;
-    test_rgb2gray();
-    std::cout << "开始测试函数 << resize >> ..." << std::endl;
-    test_resize();
-    std::cout << "开始测试函数 << hist_eq >> ..." << std::endl;
-    test_hist_eq();
+    
     return 0;
 }
